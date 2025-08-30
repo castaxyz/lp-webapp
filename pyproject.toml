@@ -1,4 +1,4 @@
-[project]
+[tool.poetry]
 name = "lp-webapp"
 version = "0.1.0"
 description = "App Streamlit para Programacion Lineal en 2 variables"
@@ -10,8 +10,5 @@ dependencies = [
     "matplotlib>=3.10.6,<4.0.0",
     "numpy>=2.3.2,<3.0.0"
 ]
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+packages = []  # esto evita que Poetry intente instalar el proyecto
 
